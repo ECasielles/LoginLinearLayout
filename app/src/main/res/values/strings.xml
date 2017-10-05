@@ -1,10 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">LoginLinearLayout</string>
-    <string name="txvSignIn">Sign In</string>
-    <string name="txvSignUp">Sign Up</string>
-    <string name="btnSignIn">Sign In</string>
+    <string name="txvSignIn">Acceder</string>
+    <string name="txvSignUp">Registro</string>
+    <string name="btnSignIn">Acceder</string>
     <string name="btnGoogleSignIn">Google</string>
-    <string name="btnFacebookSignIn">Facebook</string>
-    <string name="txvPassword">Password</string>
-    <string name="txvUser">User</string>
+    <string name="btnFacebookSignIn">Acceder con Facebook</string>
+    <string name="txvPassword">Contraseña</string>
+    <string name="txvUser">Nombre usuario o email</string>
+    <string name="chkRemember">Recordar usuario</string>
+    <string name="logo" translatable="false">Logo</string>
 </resources>

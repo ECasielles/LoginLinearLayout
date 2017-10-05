@@ -7,6 +7,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.usuario.loginlinearlayout.LoginActivity"
+    android:padding="@dimen/llo_login_margin"
+    android:background="@color/colorPrimary"
     >
 
     <TextView
@@ -14,34 +16,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/txvSignIn"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_marginBottom="@dimen/txvSignIn_margin"
         />
-
     <TextView
         android:id="@+id/txvUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/txvUser"
+        android:labelFor="@+id/edtUser"
+        android:textAppearance="@android:style/TextAppearance.Small"
         />
-
     <EditText
         android:id="@+id/edtUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:inputType="textAutoComplete"
+        android:layout_marginBottom="@dimen/edtUser_margin"
         />
-
     <TextView
         android:id="@+id/txvPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/txvPassword"
+        android:labelFor="@+id/edtPassword"
+        android:textAppearance="@android:style/TextAppearance.Small"
         />
-
     <EditText
         android:id="@+id/edtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:inputType="textPassword"
         />
 
     <LinearLayout
@@ -49,18 +54,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/llo_login_margin"
         >
-
         <android.support.v7.widget.AppCompatCheckBox
             android:id="@+id/chkRemember"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/chkRemember"
             />
         <TextView
             android:id="@+id/txvSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txvSignUp"/>
+            android:text="@string/txvSignUp"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            />
+
     </LinearLayout>
 
     <Button
@@ -68,21 +77,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnSignIn"
-        />
+        android:layout_marginBottom="@dimen/btnSignIn_margin"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
 
+        />
     <Button
         android:id="@+id/btnGoogleSignIn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btnGoogleSignIn"
-        />
+        android:drawableStart="@drawable/ic_google"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@color/colorGoogle"
+        android:layout_marginBottom="@dimen/btnGoogle_margin"
 
+        />
     <Button
         android:id="@+id/btnFacebookSignIn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btnFacebookSignIn"
-        />
+        android:drawableStart="@drawable/ic_facebook"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@color/colorFacebook"
 
+        />
 
 </LinearLayout>

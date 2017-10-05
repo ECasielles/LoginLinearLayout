@@ -15,9 +15,10 @@
         android:id="@+id/ivwLogo"
         android:layout_width="320dp"
         android:layout_height="320dp"
-        app:srcCompat="@drawable/logo"
+        app:srcCompat="@drawable/logo_fondo"
         android:layout_gravity="center"
         android:background="@android:color/white"
+        android:contentDescription="@string/logo"
         />
 
 
