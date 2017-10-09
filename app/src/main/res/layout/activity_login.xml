@@ -65,13 +65,13 @@
         android:layout_marginBottom="@dimen/llo_login_margin"
         >
 
-        <android.support.v7.widget.AppCompatCheckBox
+        <CheckBox
             android:id="@+id/chkRemember"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/chkRemember"
             android:layout_weight="0.8"
-            style="@style/Widget.Checkbox"
+            style="@style/Widget.CompoundButton.Checkbox"
             />
 
         <TextView

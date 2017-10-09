@@ -32,9 +32,10 @@
         <item name="android:padding">10dp</item>
     </style>
 
-    <style name="Widget.Checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
-        <item name="android:checkedTextViewStyle">@style/TextAppearance.AppCompat.Large</item>
-        <item name="android:checkboxStyle">@style/Widget.AppCompat.CompoundButton.CheckBox</item>
+    <!-- El color del checkbox cuando se activa pasa a ser colorAccent -->
+    <style name="Widget.CompoundButton" parent="@android:style/Widget.CompoundButton.CheckBox"/>
+    <style name="Widget.CompoundButton.Checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
 </resources>
